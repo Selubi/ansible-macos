@@ -43,6 +43,7 @@ dotfiles_repo_version: master # Replace with your default branch
 dotfiles_files:
   - .zshrc
   - .osx
+  - .zprofile
 
 configure_osx: true
 # osx_script: "~/.osx --no-restart"
