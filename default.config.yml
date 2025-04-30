@@ -4,7 +4,7 @@
 #####################
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
+  - ansible
   - bat
   - curl
   - fzf
@@ -23,6 +23,7 @@ homebrew_cask_apps:
 #  - 1password
   - font-fira-code-nerd-font
   - ghostty
+  - swish
   - visual-studio-code
   - zen-browser
 
