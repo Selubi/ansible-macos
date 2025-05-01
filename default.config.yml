@@ -49,21 +49,40 @@ configure_osx: true
 # osx_script: "~/.osx --no-restart"
 osx_script: "~/.osx"
 
+
+####################
+# Dock
+####################
+
+configure_dock: true
+dockitems_remove:
+  - Safari
+  - Calendar
+  - Contacts
+  - Reminders
+  - Notes
+  - Freeform
+  - TV
+  - 'App Store'
+  - 'iPhone Mirroring'
+dockitems_persist:
+  - name: Ghostty
+    path: /Applications/Ghostty.app
+    pos: 1
+  - name: Zen
+    path: /Applications/Zen.app
+    pos: 2
+  - name: Visual Studio Code
+    path: "/Applications/Visual Studio Code.app"
+    pos: 3
+
+  
+  
+
 ############ UNCHARTED AREA AHEAD ############
 configure_terminal: false
 
 configure_sublime: false
-# Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
-dockitems_remove: []
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
-dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
 
 configure_sudoers: false
 sudoers_custom_config: ""
